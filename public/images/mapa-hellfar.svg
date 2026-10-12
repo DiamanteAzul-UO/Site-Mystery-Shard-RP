@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1900" role="img" aria-label="Mapa estilizado de Hellfar e Myrthos">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="forestDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="7" r="2" fill="#40531a" opacity="0.8"/>
+      <circle cx="17" cy="14" r="2.4" fill="#556d21" opacity="0.85"/>
+      <circle cx="11" cy="20" r="1.8" fill="#304213" opacity="0.75"/>
+    </pattern>
+    <pattern id="snowDots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="7" r="1.2" fill="#d8d4cc" opacity="0.75"/>
+      <circle cx="13" cy="12" r="1.1" fill="#bdb8ac" opacity="0.7"/>
+    </pattern>
+    <pattern id="sandDots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="7" r="1.2" fill="#d8c28a" opacity="0.65"/>
+      <circle cx="14" cy="13" r="1.2" fill="#b89d61" opacity="0.55"/>
+    </pattern>
+    <style>
+      .shore{stroke:#11222c;stroke-width:8;stroke-linejoin:round;filter:url(#shadow)}
+      .ridge{fill:none;stroke:#67645d;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;opacity:.95}
+      .river{fill:none;stroke:#255d76;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+      .label{font-family:Georgia, serif;font-size:30px;fill:#e6d8ab;letter-spacing:3px;text-anchor:middle}
+      .sublabel{font-family:Georgia, serif;font-size:18px;fill:#a89e87;letter-spacing:1.5px;text-anchor:middle}
+    </style>
+  </defs>
+
+  <rect width="1200" height="1900" fill="#0e5069"/>
+
+  <!-- Norte nevado -->
+  <path class="shore" fill="#e6e4df" d="M472 70l59 29 38 59 34 6 41 74-19 74 59 24 20 49 68 13 27 54-24 53 17 62-31 45-80 19-67 45-59 7-78 55-61-16-58 24-89-19-56 34-86-14-27-57-63-37 14-53-33-47 14-45 57-33 50-74 37-6 40-63 70-31 30-44 63-10 58-48z"/>
+  <path d="M480 98l50 25 30 45 22 4 38 64-15 63 49 20 18 38 57 11 18 39-18 40 14 44-24 37-65 15-61 40-52 6-71 51-52-13-49 20-80-17-49 30-66-10-21-44-51-31 10-44-27-38 12-38 47-27 43-65 30-5 35-53 56-24 26-39 52-8 50-41z" fill="url(#snowDots)" opacity=".62"/>
+
+  <!-- Centro principal -->
+  <path class="shore" fill="#637312" d="M220 640l85-39 72 11 73-25 72 19 76-14 111 14 53 42 94-20 72 20 74 49 41 75 43 18 83 64-11 85-63 43-82 16-43 33-63 16-31 57 21 77-50 69-78 27-47 45-16 85-90 51-77-28-61 17-65-15-47-43-39-93-61-48-43-87 21-73-49-54-18-104 24-72-30-72 39-45z"/>
+  <path d="M243 652l66-32 59 9 67-21 62 15 70-13 97 13 46 33 87-19 63 17 61 42 35 66 34 15 71 56-9 67-56 37-68 13-35 28-55 14-28 50 19 66-44 60-65 22-41 39-14 76-76 42-68-24-55 15-55-12-40-38-32-83-54-42-36-74 18-62-42-48-15-87 20-62-25-62 35-38z" fill="url(#forestDots)" opacity=".55"/>
+
+  <!-- Deserto central-sul -->
+  <path class="shore" fill="#d8bf80" d="M455 895l123 23 145-24 88 23 108 70 32 95-19 98 29 67-55 79 17 110-34 88-63 36-29 79-103 18-88-34-76 10-75-25-36-54-88-41-55-77-34-74-15-93 27-74-26-55 20-80 58-57z"/>
+  <path d="M476 913l103 19 129-22 76 20 94 60 27 84-17 84 25 57-47 69 14 96-30 75-52 29-24 68-88 15-77-29-67 8-65-21-30-47-75-35-48-66-29-65-13-79 22-63-23-48 18-68 49-49z" fill="url(#sandDots)" opacity=".64"/>
+
+  <!-- Sul selvagem -->
+  <path class="shore" fill="#536719" d="M330 1400l78-14 93 14 51 57 63 11 58 79 6 63 40 39 57 11 58 72-15 68-63 39-80 14-74-14-53 18-85-26-44-66-72-35-46-78-8-81-33-61 26-64-28-46 19-62z"/>
+  <path d="M348 1412l67-11 79 12 44 49 53 9 52 69 5 55 34 33 49 9 50 61-12 57-53 32-69 12-64-12-45 14-74-23-38-56-62-30-40-69-7-70-29-53 23-55-24-39 16-53z" fill="url(#forestDots)" opacity=".53"/>
+
+  <!-- Ilha oriental -->
+  <path class="shore" fill="#637312" d="M1008 763l63 12 57 53 16 61-22 68 17 48-26 64-60 34-71-21-35-56-11-76 18-52-13-64 27-53z"/>
+  <path d="M1025 781l50 11 45 42 13 48-18 56 14 39-21 52-48 27-56-17-29-45-9-60 14-43-10-52 22-42z" fill="url(#forestDots)" opacity=".55"/>
+
+  <!-- Ilha do redemoinho -->
+  <path class="shore" fill="#76736d" d="M903 1408l84 16 66 53 14 83-39 71-76 35-95-15-59-65 12-91 43-60z"/>
+  <path d="M923 1426l67 14 53 42 10 65-31 57-61 27-76-13-47-52 10-72 33-47z" fill="#4b5e6a"/>
+  <path d="M930 1477c43-24 87-8 92 24 5 35-28 62-62 69-39 8-86-5-90-42-3-23 17-39 60-51z" fill="#5e7684"/>
+  <path d="M925 1515c17-24 56-28 81-10 21 16 20 48-5 70-18 17-47 22-67 13-30-12-33-45-9-73z" fill="#2f5568"/>
+
+  <!-- Cordilheiras -->
+  <path class="ridge" d="M364 278l80 12 57 40 38 68 74 45 77 16 97 60"/>
+  <path class="ridge" d="M763 685l-71 49-68 64-39 83-55 47-44 79"/>
+  <path class="ridge" d="M231 745l46 54 37 76 71 65 32 71 58 53"/>
+  <path class="ridge" d="M834 1036l-25 79-54 44-42 75-24 86"/>
+  <path class="ridge" d="M307 1267l92 10 79 42 55 74 25 78"/>
+
+  <!-- Vulcão sudoeste -->
+  <circle cx="243" cy="1313" r="73" fill="#47382f" stroke="#1b1a17" stroke-width="8" filter="url(#shadow)"/>
+  <circle cx="243" cy="1313" r="43" fill="#6e0f08"/>
+  <circle cx="243" cy="1313" r="24" fill="#b01c12"/>
+
+  <!-- Cratera central -->
+  <g filter="url(#shadow)">
+    <ellipse cx="533" cy="782" rx="67" ry="39" fill="#5a5147"/>
+    <circle cx="495" cy="758" r="15" fill="#991d18"/>
+    <circle cx="525" cy="739" r="15" fill="#991d18"/>
+    <circle cx="563" cy="748" r="15" fill="#991d18"/>
+    <circle cx="590" cy="778" r="15" fill="#991d18"/>
+    <circle cx="571" cy="811" r="15" fill="#991d18"/>
+    <circle cx="530" cy="821" r="15" fill="#991d18"/>
+    <circle cx="495" cy="799" r="15" fill="#991d18"/>
+  </g>
+
+  <!-- Rios -->
+  <path class="river" d="M430 642c-8 49 17 89 47 117 26 25 49 56 61 101 11 40 11 83 5 117-10 54-1 91 28 135 31 46 31 93 14 149"/>
+  <path class="river" d="M221 827c56-27 99-24 147 1 34 18 60 47 85 70 32 28 55 72 67 126"/>
+  <path class="river" d="M716 598c-2 58 17 102 54 144 40 44 56 88 58 150 1 46 12 95 45 145"/>
+  <path class="river" d="M573 1478c-23 43-27 93-19 138 8 44 31 95 77 128"/>
+  <path class="river" d="M389 1614c-1 48 7 91 26 124 22 38 61 76 114 107"/>
+
+  <!-- Cidades / fortalezas -->
+  <g filter="url(#shadow)">
+    <!-- Capital Aramor -->
+    <rect x="121" y="1302" width="92" height="70" fill="#7f7d77" stroke="#34302b" stroke-width="4"/>
+    <rect x="130" y="1310" width="25" height="18" fill="#56524c"/>
+    <rect x="161" y="1310" width="25" height="18" fill="#56524c"/>
+    <rect x="131" y="1335" width="56" height="28" fill="#56524c"/>
+    <rect x="190" y="1321" width="14" height="32" fill="#56524c"/>
+    <!-- Thessomar -->
+    <rect x="717" y="1731" width="72" height="43" fill="#988b70" stroke="#514837" stroke-width="4"/>
+    <rect x="730" y="1740" width="14" height="14" fill="#7e7059"/>
+    <rect x="746" y="1740" width="14" height="14" fill="#7e7059"/>
+    <rect x="763" y="1740" width="14" height="14" fill="#7e7059"/>
+    <!-- Ruína da Colônia -->
+    <rect x="608" y="986" width="49" height="36" fill="#b07f63" stroke="#51352a" stroke-width="4"/>
+    <!-- Forte Norte -->
+    <rect x="502" y="1134" width="57" height="42" fill="#c1b089" stroke="#6d5a37" stroke-width="4"/>
+    <!-- Torre nevada -->
+    <rect x="610" y="545" width="85" height="15" fill="#9b9a95" stroke="#4f514f" stroke-width="3"/>
+  </g>
+</svg>
